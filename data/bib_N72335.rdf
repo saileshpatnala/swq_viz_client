@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <rdf:RDF xmlns:gl="http://bl.uk.org/schema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema/#"
+    xmlns:scm="http://schema.org/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:role="http://www.loc.gov/loc.terms/relators/" >
+    <rdf:Description rdf:about="http://estc.bl.uk/N72335">
+        <scm:title>The Christian's new and complete family Bible; or, universal library of divine knowledge. Containing the whole of the sacred text of the Holy Bible, as contained in the Old and New Testaments, with the Apocrypha, at large. Illustrated with annotations and commentaries .. By the Rev. Thomas Bankes, ...</scm:title>
+        <scm:creator>
+            <scm:contributor rdfs:resource="http://estcbluk/agents/1">
+                <role:AUT>Bankes, Thomas, 1744-</role:AUT>
+            </scm:contributor>
+        </scm:creator>
+        <scm:date>
+             <scm:date>
+                  <rdfs:label>1787</rdfs:label>
+                  <rdfs:value>1787</rdfs:value>
+             </scm:date>
+        </scm:date>
+        <scm:spatialCoverage>Great Britain</scm:spatialCoverage>
+        <scm:spatialCoverage>England</scm:spatialCoverage>
+        <scm:spatialCoverage>London</scm:spatialCoverage>
+        <scm:subjectOf>
+                <scm:about rdfs:resource="http://estcbluk/subjects/1">
+                     <rdfs:label>Bible</rdfs:label>
+                </scm:about>
+        </scm:subjectOf>
+        <scm:subjectOf>
+                <scm:about rdfs:resource="http://estcbluk/subjects/2">
+                     <rdfs:label>1701-1800</rdfs:label>
+                </scm:about>
+        </scm:subjectOf>
+        <scm:description>The Authorised version.</scm:description>
+        <scm:description>Revelation ends on 9P2, followed by indexes, tables, and a list of subscribers ending on e3.</scm:description>
+        <scm:description>The N.T. has a separate titlepage.</scm:description>
+        <scm:description>With plates 'Engraved for the Revd. T. Bankes's Christian's family Bible'.</scm:description>
+        <scm:description>'There are at least three varieties of this edition [sic]' (Darlow &amp; Moule).</scm:description>
+        <scm:description>T.p. of only recorded copy is mutilated.</scm:description>
+        <scm:description>Citation/References: Darlow &amp; Moule,</scm:description>
+      </rdf:Description>
+</rdf:RDF>
