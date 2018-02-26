@@ -1,0 +1,2 @@
+tomcat/logs/*
+tomcat/conf/server.xml
