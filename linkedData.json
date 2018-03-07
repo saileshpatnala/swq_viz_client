@@ -1,0 +1,21 @@
+{  
+	"head": 
+	{    
+		"vars": [ "subject" , "predicate" , "object" ]  
+	} ,  
+	"results": 
+	{    
+		"bindings": [      
+			{        
+				"subject": { "type": "uri" , "value": "http://estc.bl.uk/N72338" } ,        
+				"predicate": { "type": "uri" , "value": "http://schema.org/spatialCoverage" } ,        
+				"object": { "type": "literal" , "value": "Great Britain" }      
+			} ,      
+			{       
+				"subject": { "type": "uri" , "value": "http://estc.bl.uk/N72335" } ,        
+				"predicate": { "type": "uri" , "value": "http://schema.org/spatialCoverage" } ,        
+				"object": { "type": "literal" , "value": "Great Britain" }      
+			}    
+		]  
+	}
+}
