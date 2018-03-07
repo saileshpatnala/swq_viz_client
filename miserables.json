@@ -20,7 +20,6 @@
     {"id": "OldMan2", "group": 1}
   ],
   "links": [
-   
     {"source": "Mlle.Baptistine", "target": "Myriel", "value": 1},
     {"source": "Geborand", "target": "Myriel", "value": 1},
     {"source": "Champtercier", "target": "Myriel", "value": 1},
@@ -40,6 +39,7 @@
     {"source": "Myriel2", "target": "OldMan2", "value": 1},
     {"source": "CountessdeLo2", "target": "OldMan2", "value": 1},
     {"source": "Mlle.Baptistine2", "target": "CountessdeLo2", "value": 1},
-    {"source": "Champtercier2", "target": "Mme.Magloire2", "value": 1}
-  ] {"source": "Napoleon", "target": "Myriel", "value": 1},
+    {"source": "Champtercier2", "target": "Mme.Magloire2", "value": 1},
+    {"source": "Napoleon", "target": "Myriel", "value": 1}
+  ] 
 }
