@@ -29,10 +29,36 @@
 		.force("charge", d3.forceManyBody())
 		.force("center", d3.forceCenter(width / 2, height / 2));
 
-	d3.json("./miserables.json", function(error, graph) {
+	d3.json("./linkedData.json", function(error, obj) {
 		if (error) throw error;
 
-		console.log(graph);
+		var links = [];
+		var nodes = [];
+		var graph = {};
+
+		Object.keys(obj).forEach(function(key){
+			var triples = obj[key];
+			triples.forEach(function(key){
+				var triple = {};
+				triple["source"] = key.subject.value;
+				triple["target"] = key.object.value;
+				triple["predicate"] = key.predicate.value;
+				triple["value"] = 1;
+				links.push(triple);
+
+				var node = {};
+				node["id"] = key.subject.value;
+				node["group"] = 1;
+				nodes.push(node);
+				node = {};
+				node["id"] = key.object.value;
+				node["group"] = 1;
+				nodes.push(node);
+			});
+		});
+
+		graph["nodes"] = nodes;
+		graph["links"] = links;
 
 		var link = svg.append("g")
 			.attr("class", "links")
