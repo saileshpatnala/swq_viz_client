@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
+<html lang = "en">
 <style>
 
 .links line {
@@ -15,7 +16,7 @@
 </style>
 <svg width="960" height="600"></svg>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
-<script type="text/javascript" src="./js/json.parser.js"></script>>
+<script type="text/javascript" src="./js/json.parser.js"></script>
 <script>
 
 	var svg = d3.select("svg"),
@@ -95,6 +96,9 @@
 
 		node.append("title")
 			.text(function(d) { return d.id; }); 
+
+		link.append("title")
+			.text(function (d) {return d.predicate;});
 
 		simulation
 			.nodes(graph.nodes)
