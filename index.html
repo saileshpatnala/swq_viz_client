@@ -48,14 +48,7 @@
 		.force("charge", d3.forceManyBody())
 		.force("center", d3.forceCenter(width / 2, height / 2));
 
-	function callEndpoint() {
-	    $.getJSON('http://localhost:8080/TripleDataProcessor/webapi/myresource', function(data) {
-	        console.log(data)
-	    });
-	}
-	callEndpoint();
-
-	d3.json("./linkedData.json", function (error, graph) {
+	d3.json("http://localhost:8080/TripleDataProcessor/webapi/myresource", function (error, graph) {
 		if (error) throw error;
 
 		var links = [];
