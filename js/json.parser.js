@@ -29,3 +29,4 @@ Object.keys(obj).forEach(function(key){
 graph["nodes"] = nodes;
 graph["links"] = links;
 
+console.log(graph);
