@@ -2,4 +2,4 @@ var responseString = '{"Great Britain":[{"predicate":{"type":"uri","value":"http
 
 var obj = JSON.parse(responseString);
 
-console.log(obj);
+console.log(responseString);
