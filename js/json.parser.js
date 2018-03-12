@@ -5,9 +5,6 @@ var links = [];
 var nodes = [];
 var graph = {};
 
-<<<<<<< HEAD
-console.log(responseString);
-=======
 Object.keys(obj).forEach(function(key){
 	var triples = obj[key];
 	triples.forEach(function(key){
@@ -31,4 +28,5 @@ Object.keys(obj).forEach(function(key){
 
 graph["nodes"] = nodes;
 graph["links"] = links;
->>>>>>> json parser added. graph now displaying query data
+
+console.log(graph);
