@@ -24,7 +24,5 @@ for (var title in input) {
 	}
 }
 
-//var obj = JSON.parse(responseString);
-
 console.log(links);
 console.log(nodes);

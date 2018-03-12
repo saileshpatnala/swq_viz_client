@@ -80,8 +80,21 @@
 					.on("drag", dragged)
 					.on("end", dragended));
 
+		var text = svg.append("g")
+			.attr("class", "labels")
+			.selectAll("g")
+			.data(graph.nodes)
+			.enter().append("g");
+
+		text.append("text")
+			.attr("x", 14)
+			.attr("y", ".31em")
+		    .style("font-family", "sans-serif")
+		    .style("font-size", "0.7em")
+		    .text(function(d) { return d.id; });
+
 		node.append("title")
-			.text(function(d) { return d.id; });
+			.text(function(d) { return d.id; }); 
 
 		simulation
 			.nodes(graph.nodes)
@@ -100,6 +113,9 @@
 			node
 				.attr("cx", function(d) { return d.x; })
 				.attr("cy", function(d) { return d.y; });
+
+			text
+				.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
 	 	}
 	});
 
